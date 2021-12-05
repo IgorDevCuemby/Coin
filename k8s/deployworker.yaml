@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: worker
-  namespace: flux
+  namespace: default
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: worker
